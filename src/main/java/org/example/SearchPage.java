@@ -26,6 +26,7 @@ public class SearchPage {
     }
     
 
+
     public void selectTypeOfEmployment(String typeOfEmployment) {
         $(Selectors.byAttribute("data-tracking-control-name", "public_jobs_JOB_TYPE-dropdown")).click();
         $x("//ul[@class='filter-list__list']/li[@class='filter-list__list-item filter-button-dropdown__list-item']/label[contains(text(), '" + typeOfEmployment + "')]").click();
