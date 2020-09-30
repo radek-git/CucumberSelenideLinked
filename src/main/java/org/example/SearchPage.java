@@ -24,6 +24,7 @@ public class SearchPage {
         $(Selectors.byAttribute("aria-controls", "job-search-bar-location-typeahead-list")).val(region);
         actions().sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER).build().perform();
     }
+    
 
     public void selectTypeOfEmployment(String typeOfEmployment) {
         $(Selectors.byAttribute("data-tracking-control-name", "public_jobs_JOB_TYPE-dropdown")).click();
